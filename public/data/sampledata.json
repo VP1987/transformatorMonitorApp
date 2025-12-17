@@ -1,0 +1,452 @@
+[
+  {
+    "assetId": 1,
+    "name": "Transformer Atlas",
+    "region": "Berlin",
+    "health": "Good",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "23211" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "22845" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "23567" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "23110" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "22987" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "23745" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "23401" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "22698" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "23354" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "23012" }
+    ]
+  },
+  {
+    "assetId": 2,
+    "name": "Transformer Nova",
+    "region": "Madrid",
+    "health": "Fair",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "21432" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "21987" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "20845" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "22110" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "20654" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "21234" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "21876" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "20998" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "21654" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "21011" }
+    ]
+  },
+  {
+    "assetId": 3,
+    "name": "Transformer Orion",
+    "region": "Paris",
+    "health": "Good",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "18231" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "19012" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "17654" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "18890" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "17123" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "17998" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "18567" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "19201" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "18045" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "17432" }
+    ]
+  },
+  {
+    "assetId": 4,
+    "name": "Transformer Helios",
+    "region": "Vienna",
+    "health": "Poor",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "19876" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "20543" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "19321" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "20110" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "18987" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "19654" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "20234" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "19123" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "19998" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "18765" }
+    ]
+  },
+  {
+    "assetId": 5,
+    "name": "Transformer Echo",
+    "region": "London",
+    "health": "Good",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "22987" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "23154" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "23412" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "22890" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "23544" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "23711" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "23098" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "22765" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "23310" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "22901" }
+    ]
+  },
+  {
+    "assetId": 6,
+    "name": "Transformer Vega",
+    "region": "Prague",
+    "health": "Fair",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "21987" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "21456" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "22134" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "20987" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "21654" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "21210" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "21890" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "21034" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "22301" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "21567" }
+    ]
+  },
+  {
+    "assetId": 7,
+    "name": "Transformer Sirius",
+    "region": "Oslo",
+    "health": "Good",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "23456" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "23678" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "23210" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "23890" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "23145" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "23512" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "23901" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "23398" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "23754" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "23421" }
+    ]
+  },
+  {
+    "assetId": 8,
+    "name": "Transformer Luna",
+    "region": "Helsinki",
+    "health": "Poor",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "19801" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "20345" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "19123" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "20567" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "18790" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "19654" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "20110" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "18945" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "19432" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "18678" }
+    ]
+  },
+  {
+    "assetId": 9,
+    "name": "Transformer Apollo",
+    "region": "Rome",
+    "health": "Good",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "22890" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "23123" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "23456" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "22987" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "23510" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "23765" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "23098" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "22654" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "23345" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "22901" }
+    ]
+  },
+  {
+    "assetId": 10,
+    "name": "Transformer Titan",
+    "region": "Zurich",
+    "health": "Good",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "18123" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "18987" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "17654" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "19210" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "17345" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "17998" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "18567" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "19034" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "17890" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "17221" }
+    ]
+  },
+  {
+    "assetId": 11,
+    "name": "Transformer Aurora",
+    "region": "Stockholm",
+    "health": "Good",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "23612" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "23901" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "23245" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "23790" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "23456" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "23821" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "23198" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "22987" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "23544" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "23310" }
+    ]
+  },
+  {
+    "assetId": 12,
+    "name": "Transformer Comet",
+    "region": "Dublin",
+    "health": "Fair",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "21765" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "31234" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "31901" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "31098" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "31654" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "21321" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "21890" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "20987" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "21544" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "21110" }
+    ]
+  },
+  {
+    "assetId": 13,
+    "name": "Transformer Pulsar",
+    "region": "Warsaw",
+    "health": "Poor",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "19910" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "20345" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "19123" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "20501" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "18876" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "39654" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "20132" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "18998" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "19421" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "18765" }
+    ]
+  },
+  {
+    "assetId": 14,
+    "name": "Transformer Nimbus",
+    "region": "Brussels",
+    "health": "Good",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "23012" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "23245" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "23501" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "12987" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "13456" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "23678" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "23190" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "22845" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "13321" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "13098" }
+    ]
+  },
+  {
+    "assetId": 15,
+    "name": "Transformer Draco",
+    "region": "Budapest",
+    "health": "Fair",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "18321" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "18976" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "17654" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "19110" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "10432" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "32998" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "33567" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "19001" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "17890" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "17210" }
+    ]
+  },
+  {
+    "assetId": 16,
+    "name": "Transformer Boreas",
+    "region": "Copenhagen",
+    "health": "Good",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "23345" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "23610" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "23198" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "23801" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "23456" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "16765" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "23210" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "22987" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "12544" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "23301" }
+    ]
+  },
+  {
+    "assetId": 17,
+    "name": "Transformer Solis",
+    "region": "Lisbon",
+    "health": "Fair",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "21890" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "21432" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "22101" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "20987" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "21654" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "21210" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "21976" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "21034" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "22345" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "21567" }
+    ]
+  },
+  {
+    "assetId": 18,
+    "name": "Transformer Aether",
+    "region": "Tallinn",
+    "health": "Poor",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "19765" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "20310" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "19098" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "14501" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "18876" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "19654" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "20132" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "18998" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "19421" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "12765" }
+    ]
+  },
+  {
+    "assetId": 19,
+    "name": "Transformer Helix",
+    "region": "Milan",
+    "health": "Fair",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "19987" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "23154" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "20412" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "22890" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "16544" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "23711" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "23098" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "22765" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "32310" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "22901" }
+    ]
+  },
+  {
+    "assetId": 20,
+    "name": "Transformer Kronos",
+    "region": "Athens",
+    "health": "Fair",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "18110" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "18901" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "17654" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "19123" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "17345" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "17998" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "18567" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "19034" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "17890" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "17221" }
+    ]
+  },
+  {
+    "assetId": 21,
+    "name": "Transformer Phoenix",
+    "region": "Hamburg",
+    "health": "Good",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "31245" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "29876" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "32510" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "28765" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "30123" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "31987" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "29456" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "32789" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "30998" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "28110" }
+    ]
+  },
+  {
+    "assetId": 22,
+    "name": "Transformer Cyclone",
+    "region": "Rotterdam",
+    "health": "Fair",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "21543" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "19876" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "22450" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "18765" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "20654" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "23110" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "19345" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "21890" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "20123" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "17654" }
+    ]
+  },
+  {
+    "assetId": 23,
+    "name": "Transformer Vortex",
+    "region": "Munich",
+    "health": "Poor",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "25432" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "18210" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "26789" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "19345" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "44876" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "37123" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "15998" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "18654" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "26234" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "27510" }
+    ]
+  },
+  {
+    "assetId": 24,
+    "name": "Transformer Eclipse",
+    "region": "Seville",
+    "health": "Good",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "28987" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "30123" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "31567" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "29456" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "32710" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "30998" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "28890" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "32145" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "29765" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "31012" }
+    ]
+  },
+  {
+    "assetId": 25,
+    "name": "Transformer Nemesis",
+    "region": "Belgrade",
+    "health": "Good",
+    "lastTenVoltageReadings": [
+      { "timestamp": "2024-07-21T12:00:00Z", "voltage": "21234" },
+      { "timestamp": "2024-07-21T11:55:00Z", "voltage": "24567" },
+      { "timestamp": "2024-07-21T11:50:00Z", "voltage": "23110" },
+      { "timestamp": "2024-07-21T11:45:00Z", "voltage": "26789" },
+      { "timestamp": "2024-07-21T11:40:00Z", "voltage": "22123" },
+      { "timestamp": "2024-07-21T11:35:00Z", "voltage": "25498" },
+      { "timestamp": "2024-07-21T11:30:00Z", "voltage": "123987" },
+      { "timestamp": "2024-07-21T11:25:00Z", "voltage": "26210" },
+      { "timestamp": "2024-07-21T11:20:00Z", "voltage": "22876" },
+      { "timestamp": "2024-07-21T11:15:00Z", "voltage": "17123" }
+    ]
+  }
+]
