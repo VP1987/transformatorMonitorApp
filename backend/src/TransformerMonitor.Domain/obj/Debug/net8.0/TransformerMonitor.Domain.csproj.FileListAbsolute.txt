@@ -1,0 +1,12 @@
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Domain\bin\Debug\net8.0\TransformerMonitor.Domain.deps.json
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Domain\bin\Debug\net8.0\TransformerMonitor.Domain.dll
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Domain\bin\Debug\net8.0\TransformerMonitor.Domain.pdb
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Domain\obj\Debug\net8.0\TransformerMonitor.Domain.GeneratedMSBuildEditorConfig.editorconfig
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Domain\obj\Debug\net8.0\TransformerMonitor.Domain.AssemblyInfoInputs.cache
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Domain\obj\Debug\net8.0\TransformerMonitor.Domain.AssemblyInfo.cs
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Domain\obj\Debug\net8.0\TransformerMonitor.Domain.csproj.CoreCompileInputs.cache
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Domain\obj\Debug\net8.0\TransformerMonitor.Domain.sourcelink.json
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Domain\obj\Debug\net8.0\TransformerMonitor.Domain.dll
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Domain\obj\Debug\net8.0\refint\TransformerMonitor.Domain.dll
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Domain\obj\Debug\net8.0\TransformerMonitor.Domain.pdb
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Domain\obj\Debug\net8.0\ref\TransformerMonitor.Domain.dll

@@ -1,0 +1,16 @@
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\bin\Debug\net8.0\TransformerMonitor.Application.deps.json
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\bin\Debug\net8.0\TransformerMonitor.Application.dll
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\bin\Debug\net8.0\TransformerMonitor.Application.pdb
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\bin\Debug\net8.0\TransformerMonitor.Domain.dll
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\bin\Debug\net8.0\TransformerMonitor.Domain.pdb
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\obj\Debug\net8.0\TransformerMonitor.Application.csproj.AssemblyReference.cache
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\obj\Debug\net8.0\TransformerMonitor.Application.GeneratedMSBuildEditorConfig.editorconfig
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\obj\Debug\net8.0\TransformerMonitor.Application.AssemblyInfoInputs.cache
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\obj\Debug\net8.0\TransformerMonitor.Application.AssemblyInfo.cs
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\obj\Debug\net8.0\TransformerMonitor.Application.csproj.CoreCompileInputs.cache
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\obj\Debug\net8.0\TransformerMonitor.Application.sourcelink.json
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\obj\Debug\net8.0\Transfor.BB8FA721.Up2Date
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\obj\Debug\net8.0\TransformerMonitor.Application.dll
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\obj\Debug\net8.0\refint\TransformerMonitor.Application.dll
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\obj\Debug\net8.0\TransformerMonitor.Application.pdb
+I:\transformatorMonitorApp\backend\src\TransformerMonitor.Application\obj\Debug\net8.0\ref\TransformerMonitor.Application.dll

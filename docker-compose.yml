@@ -1,0 +1,30 @@
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrong@Password123
+    ports:
+      - "1433:1433"
+
+  api:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      - DB_CONNECTION_STRING=Server=db;Database=TransformerTestDataBase;User Id=sa;Password=YourStrong@Password123;TrustServerCertificate=True
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:61471
+    ports:
+      - "61471:61471"
+    depends_on:
+      - db
+
+  ui:
+    build:
+      context: .
+      dockerfile: presentation/Dockerfile
+    ports:
+      - "5173:80"
+    depends_on:
+      - api

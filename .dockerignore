@@ -1,0 +1,15 @@
+node_modules/
+presentation/node_modules/
+npm-debug.log
+.git/
+.vs/
+.vscode/
+**/bin/
+**/obj/
+**/TestResults/
+.DS_Store
+dist/
+presentation/dist/
+coverage/
+*.suo
+*.user
