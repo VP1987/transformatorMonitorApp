@@ -27,7 +27,13 @@ public class TicketHandlers :
 
     public async Task<IEnumerable<TicketDto>> Handle(GetAllTicketsQuery request, CancellationToken cancellationToken)
     {
-        var tickets = await _unitOfWork.Tickets.GetAllAsync();
+        var tickets = await _unitOfWork.Tickets.GetFilteredTicketsAsync(
+            request.SearchTerm, 
+            request.TeamId, 
+            request.Priority, 
+            request.Status, 
+            request.SortDir);
+            
         return _mapper.Map<IEnumerable<TicketDto>>(tickets);
     }
 

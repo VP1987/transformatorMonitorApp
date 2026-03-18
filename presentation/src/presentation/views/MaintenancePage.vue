@@ -90,9 +90,21 @@
                       </option>
                     </select>
                   </div>
+                  <div class="priority-filter-wrap">
+                    <select v-model="priorityFilter" class="select-field">
+                      <option value="">All Priorities</option>
+                      <option value="Critical">Critical</option>
+                      <option value="High">High</option>
+                      <option value="Medium">Medium</option>
+                      <option value="Low">Low</option>
+                    </select>
+                  </div>
                 </div>
 
-                <div class="table-scroll">
+                <div class="table-scroll" style="position: relative; min-height: 200px;">
+                  <div v-if="isLoadingTickets" class="spinner-overlay">
+                    <div class="spinner"></div>
+                  </div>
                   <table class="data-table">
                     <thead>
                       <tr>
@@ -104,7 +116,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr v-for="ticket in filteredTickets" :key="ticket.id">
+                      <tr v-for="ticket in maintenanceStore.allTickets" :key="ticket.id">
                         <td class="asset-name-col">{{ ticket.transformerName }}</td>
                         <td>
                           <span :class="['prio-tag', ticket.priority.toLowerCase()]">
@@ -153,7 +165,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted, computed } from 'vue';
+import { ref, onMounted, computed, watch } from 'vue';
 import HeaderComponent from "@/presentation/components/HeaderComponent.vue";
 import CreateWorkOrderModal from "@/presentation/components/modals/CreateWorkOrderModal.vue";
 import { useMaintenanceStore } from '@/application/stores/maintenance.store';
@@ -167,44 +179,50 @@ const isRefreshing = ref(false);
 const activeTab = ref('Active');
 const searchQuery = ref('');
 const teamFilter = ref('');
+const priorityFilter = ref('');
 const sortDir = ref<'asc' | 'desc'>('desc');
 
 const sectionOrder = ref(['teams', 'tickets']);
 const draggingIndex = ref<number | null>(null);
+const isLoadingTickets = ref(false);
+let searchTimeout: ReturnType<typeof setTimeout> | null = null;
 
-onMounted(() => {
-  maintenanceStore.load();
+const fetchFilteredTickets = async () => {
+  isLoadingTickets.value = true;
+  await maintenanceStore.loadTickets({
+    searchTerm: searchQuery.value,
+    teamId: teamFilter.value,
+    priority: priorityFilter.value,
+    status: activeTab.value === 'All' ? '' : activeTab.value,
+    sortDir: sortDir.value
+  });
+  isLoadingTickets.value = false;
+};
+
+onMounted(async () => {
+  await maintenanceStore.load(); // loads initial data
   const savedOrder = localStorage.getItem('maintenance_section_order');
   if (savedOrder && typeof savedOrder === 'string') {
     sectionOrder.value = JSON.parse(savedOrder);
   }
+  fetchFilteredTickets();
 });
 
-const filteredTickets = computed(() => {
-  let list = [...maintenanceStore.allTickets];
-  if (activeTab.value === 'Active') {
-    list = list.filter(t => t.status !== 'Resolved');
-  } else if (activeTab.value === 'Resolved') {
-    list = list.filter(t => t.status === 'Resolved');
-  }
-  const q = searchQuery.value.toLowerCase().trim();
-  if (q) {
-    list = list.filter(t => (t.transformerName || '').toLowerCase().includes(q) || (t.description || '').toLowerCase().includes(q));
-  }
-  if (teamFilter.value) {
-    list = list.filter(t => t.assignedTeamId === Number(teamFilter.value));
-  }
-  list.sort((a, b) => {
-    const dateA = new Date(a.createdAt).getTime();
-    const dateB = new Date(b.createdAt).getTime();
-    return sortDir.value === 'desc' ? dateB - dateA : dateA - dateB;
-  });
-  return list;
+watch([teamFilter, priorityFilter, activeTab, sortDir], () => {
+  fetchFilteredTickets();
+});
+
+watch(searchQuery, () => {
+  if (searchTimeout) clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(() => {
+    fetchFilteredTickets();
+  }, 400); // 400ms debounce
 });
 
 const handleRefresh = async () => {
   isRefreshing.value = true;
   await maintenanceStore.load();
+  await fetchFilteredTickets();
   setTimeout(() => { isRefreshing.value = false; }, 500);
 };
 
@@ -216,11 +234,13 @@ const assign = async (ticketId: number, teamIdStr: string) => {
   const teamId = teamIdStr ? Number(teamIdStr) : null;
   if (teamId) {
     await maintenanceStore.assignTicket(ticketId, teamId);
+    await fetchFilteredTickets();
   }
 };
 
 const handleResolve = async (ticketId: number) => {
   await maintenanceStore.resolveTicket(ticketId);
+  await fetchFilteredTickets();
 };
 
 const onDragStart = (index: number) => {
@@ -241,6 +261,32 @@ const onDrop = (index: number) => {
 
 <style scoped>
 .maintenance-layout { display: flex; flex-direction: column; padding: 0 25px; }
+
+.spinner-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  border-radius: 8px;
+}
+:root[data-theme="dark"] .spinner-overlay { background: rgba(0, 0, 0, 0.4); }
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid var(--border);
+  border-top: 4px solid #007bff; /* Blue spinner */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 .draggable-container {
   display: flex;

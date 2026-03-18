@@ -13,8 +13,22 @@ export class TeamApiRepository {
 }
 
 export class TicketApiRepository {
-  async getAll() {
-    const response = await fetch(`${getApiUrl()}/tickets`);
+  async getAll(params?: { searchTerm?: string; teamId?: string; priority?: string; status?: string; sortDir?: string }) {
+    let url = `${getApiUrl()}/tickets`;
+    if (params) {
+      const query = new URLSearchParams();
+      if (params.searchTerm) query.append('searchTerm', params.searchTerm);
+      if (params.teamId) query.append('teamId', params.teamId);
+      if (params.priority) query.append('priority', params.priority);
+      if (params.status) query.append('status', params.status);
+      if (params.sortDir) query.append('sortDir', params.sortDir);
+      
+      const queryString = query.toString();
+      if (queryString) {
+        url += `?${queryString}`;
+      }
+    }
+    const response = await fetch(url);
     return response.ok ? await response.json() : [];
   }
 

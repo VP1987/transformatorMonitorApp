@@ -18,9 +18,9 @@ public class TicketsController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<TicketDto>>> GetAll()
+    public async Task<ActionResult<IEnumerable<TicketDto>>> GetAll([FromQuery] GetAllTicketsQuery query)
     {
-        return Ok(await _mediator.Send(new GetAllTicketsQuery()));
+        return Ok(await _mediator.Send(query));
     }
 
     [HttpGet("open")]

@@ -21,6 +21,15 @@ export const useMaintenanceStore = defineStore("maintenance", {
   },
 
   actions: {
+    async loadTickets(params?: { searchTerm?: string; teamId?: string; priority?: string; status?: string; sortDir?: string }) {
+      try {
+        const tickets = await this.ticketRepo.getAll(params);
+        this.allTickets = tickets;
+      } catch (error) {
+        console.error("Maintenance load tickets error:", error);
+      }
+    },
+
     async load() {
       try {
         const [teams, activeTeams, tickets] = await Promise.all([
