@@ -17,6 +17,6 @@ RUN npm run build
 # Runtime stage
 FROM nginx:stable-alpine
 COPY --from=build /app/dist /usr/share/nginx/html
-# Standard Nginx config
+
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+CMD printf '{"Backend":{"Port":%s,"Url":"%s"},"Frontend":{"Port":%s,"Url":"%s"}}' "${BACKEND_PORT:-61471}" "${BACKEND_URL:-http://localhost:61471}" "${FRONTEND_PORT:-5173}" "${FRONTEND_URL:-http://localhost:5173}" > /usr/share/nginx/html/app-config.json && nginx -g 'daemon off;'

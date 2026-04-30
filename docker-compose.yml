@@ -5,7 +5,7 @@ services:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=YourStrong@Password123
     ports:
-      - "1433:1433"
+      - "${DB_PORT:-1433}:1433"
 
   api:
     build:
@@ -14,9 +14,13 @@ services:
     environment:
       - DB_CONNECTION_STRING=Server=db;Database=TransformerTestDataBase;User Id=sa;Password=YourStrong@Password123;TrustServerCertificate=True
       - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://+:61471
+      - BACKEND_PORT=${BACKEND_PORT:-61471}
+      - FRONTEND_PORT=${FRONTEND_PORT:-5173}
+      - BACKEND_URL=http://localhost:${BACKEND_PORT:-61471}
+      - FRONTEND_URL=http://localhost:${FRONTEND_PORT:-5173}
+      - ASPNETCORE_URLS=http://+:${BACKEND_PORT:-61471}
     ports:
-      - "61471:61471"
+      - "${BACKEND_PORT:-61471}:${BACKEND_PORT:-61471}"
     depends_on:
       - db
 
@@ -24,7 +28,12 @@ services:
     build:
       context: .
       dockerfile: presentation/Dockerfile
+    environment:
+      - BACKEND_PORT=${BACKEND_PORT:-61471}
+      - FRONTEND_PORT=${FRONTEND_PORT:-5173}
+      - BACKEND_URL=http://localhost:${BACKEND_PORT:-61471}
+      - FRONTEND_URL=http://localhost:${FRONTEND_PORT:-5173}
     ports:
-      - "5173:80"
+      - "${FRONTEND_PORT:-5173}:80"
     depends_on:
       - api

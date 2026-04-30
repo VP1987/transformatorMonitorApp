@@ -38,10 +38,16 @@ if (string.IsNullOrEmpty(configPath))
 
 var configJson = File.ReadAllText(configPath);
 using var doc = JsonDocument.Parse(configJson);
-var backendUrl = doc.RootElement.GetProperty("Backend").GetProperty("Url").GetString();
-var frontendUrl = doc.RootElement.GetProperty("Frontend").GetProperty("Url").GetString();
 
-var backendPort = doc.RootElement.GetProperty("Backend").GetProperty("Port").GetInt32();
+var backendPort = GetPort("BACKEND_PORT", doc.RootElement.GetProperty("Backend").GetProperty("Port").GetInt32());
+var frontendPort = GetPort("FRONTEND_PORT", doc.RootElement.GetProperty("Frontend").GetProperty("Port").GetInt32());
+var backendUrl = Environment.GetEnvironmentVariable("BACKEND_URL")
+    ?? doc.RootElement.GetProperty("Backend").GetProperty("Url").GetString()
+    ?? $"http://localhost:{backendPort}";
+var frontendUrl = Environment.GetEnvironmentVariable("FRONTEND_URL")
+    ?? doc.RootElement.GetProperty("Frontend").GetProperty("Url").GetString()
+    ?? $"http://localhost:{frontendPort}";
+
 builder.WebHost.UseUrls($"http://*:{backendPort}");
 
 builder.Services.AddControllers();
@@ -100,3 +106,9 @@ using (var scope = app.Services.CreateScope())
 }
 
 app.Run();
+
+static int GetPort(string variableName, int fallback)
+{
+    var value = Environment.GetEnvironmentVariable(variableName);
+    return int.TryParse(value, out var port) ? port : fallback;
+}
